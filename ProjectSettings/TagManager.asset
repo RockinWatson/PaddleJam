@@ -41,3 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background1
+    uniqueID: 3340313315
+    locked: 0
+  - name: puck
+    uniqueID: 3699186515
+    locked: 0
+  - name: Front3
+    uniqueID: 1325134371
+    locked: 0
+  - name: Front2
+    uniqueID: 2635801607
+    locked: 0
+  - name: paddle
+    uniqueID: 2184639495
+    locked: 0
+  - name: 1.1
+    uniqueID: 2833193577
+    locked: 0
+  - name: Front1
+    uniqueID: 1177488785
+    locked: 0
