@@ -47,6 +47,15 @@ TagManager:
   - name: puck
     uniqueID: 3699186515
     locked: 0
+  - name: crowd3
+    uniqueID: 3017594055
+    locked: 0
+  - name: crowd2
+    uniqueID: 572381569
+    locked: 0
+  - name: crowd1
+    uniqueID: 2231881981
+    locked: 0
   - name: Front3
     uniqueID: 1325134371
     locked: 0
@@ -61,4 +70,10 @@ TagManager:
     locked: 0
   - name: Front1
     uniqueID: 1177488785
+    locked: 0
+  - name: display2
+    uniqueID: 1808850135
+    locked: 0
+  - name: display1
+    uniqueID: 2413013613
     locked: 0
