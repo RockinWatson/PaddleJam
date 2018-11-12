@@ -13,8 +13,7 @@ public class PaddleScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        var xInput = Input.GetAxis("Horizontal");
-
+        var xInput = Input.GetAxis("Horizontal");       
         if (xInput == 0)
         {
             Stop();
@@ -28,9 +27,32 @@ public class PaddleScript : MonoBehaviour {
             MoveRight();
         }
 
+        //var yInput = Input.GetAxis("Vertical");
+        //if (yInput == 0)
+        //{
+        //    Stop();
+        //}
+        //if (yInput < 0)
+        //{
+        //    MoveDown();
+        //}
+        //if (yInput > 0)
+        //{
+        //    MoveUp();
+        //}
+
+
         Vector3 pos = transform.position;
         pos.x = Mathf.Clamp(pos.x, -MaxX, MaxX);
         transform.position = pos;
+    }
+
+    void MoveUp() {
+        RB.velocity = new Vector2(0, Speed);
+    }
+
+    void MoveDown() {
+        RB.velocity = new Vector2(0, -Speed);
     }
 
     void MoveLeft() {
