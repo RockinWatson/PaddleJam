@@ -661,7 +661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RB: {fileID: 548092055}
-  Speed: 10
+  Speed: 6
   MaxX: 3.3
 --- !u!1001 &570211382
 Prefab:
@@ -1225,6 +1225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1014328722}
   - component: {fileID: 1014328721}
+  - component: {fileID: 1014328723}
   m_Layer: 0
   m_Name: tongue
   m_TagString: Untagged
@@ -1283,12 +1284,43 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1014328720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.76, y: 1.01, z: 0}
+  m_LocalPosition: {x: -0.01, y: 1.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2056151734}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014328723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014328720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c6a04b222d0e544b032b8d99c49a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  distance: {x: 2, y: 0.15, z: 0}
+  speed: 4
 --- !u!1 &1123188263
 GameObject:
   m_ObjectHideFlags: 0
