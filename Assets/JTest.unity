@@ -629,7 +629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RB: {fileID: 548092055}
-  Speed: 5
+  Speed: 10
   MaxX: 3.3
 --- !u!1001 &570211382
 Prefab:
