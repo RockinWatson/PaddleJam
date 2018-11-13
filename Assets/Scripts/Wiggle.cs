@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Wiggle : MonoBehaviour {
 
+    public Vector2 moveToWhenHit;
+    private bool _isHit = false;
+
     public AnimationCurve curve;
     public Vector3 distance;
     public float speed;
@@ -30,18 +33,36 @@ public class Wiggle : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        float d = (Time.time - timeStart) / speed, m = curve.Evaluate(d);
-        if (d > 1)
+        if (!_isHit)
         {
-            randomToPos();
+            float d = (Time.time - timeStart) / speed, m = curve.Evaluate(d);
+            if (d > 1)
+            {
+                randomToPos();
+            }
+            else if (d < 0.5)
+            {
+                transform.position = Vector3.Lerp(startPos, toPos, m * 2.0f);
+            }
+            else
+            {
+                transform.position = Vector3.Lerp(toPos, startPos, (m - 0.5f) * 2.0f);
+            }
         }
-        else if (d < 0.5)
+
+        if (_isHit)
         {
-            transform.position = Vector3.Lerp(startPos, toPos, m * 2.0f);
+            //Move off of screen
+            transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), moveToWhenHit, 3 * Time.deltaTime);
         }
-        else
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "puck")
         {
-            transform.position = Vector3.Lerp(toPos, startPos, (m - 0.5f) * 2.0f);
+            _isHit = true;
         }
     }
 }

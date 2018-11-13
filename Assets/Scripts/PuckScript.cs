@@ -12,8 +12,7 @@ public class PuckScript : MonoBehaviour {
 	private float volHighRange = 1.0f;
 
 	// Use this for initialization
-	void Start () {
-        	
+	void Start () {       	
 		source = GetComponent<AudioSource>();
 	}
 
@@ -33,5 +32,10 @@ public class PuckScript : MonoBehaviour {
 			source.PlayOneShot(PuckRelease,vol);
 
 		}
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }

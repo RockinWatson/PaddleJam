@@ -10,7 +10,6 @@ public class ToothScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
 		PuckReleaseSource = GetComponent<AudioSource> ();
 	}
 	
@@ -23,14 +22,13 @@ public class ToothScript : MonoBehaviour {
     {
         if (collision.gameObject.tag == "puck")
         {
+            PuckReleaseSource.Play();
             _health -= 1;
             if (_health <= 0)
             {
                 gameObject.SetActive(false);
             }
-        }
-		if (collision.gameObject.tag == "puck")
-			PuckReleaseSource.Play ();
+        }	
     }
 
     private void OnGUI()
