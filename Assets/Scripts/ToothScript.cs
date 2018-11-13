@@ -4,12 +4,14 @@ public class ToothScript : MonoBehaviour {
 
     public SpriteRenderer _spRend;
     public Sprite[] _sprites;
+	public AudioSource PuckReleaseSource;
 
     private int _health = 3;
 
 	// Use this for initialization
 	void Start () {
-		
+	
+		PuckReleaseSource = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -27,6 +29,8 @@ public class ToothScript : MonoBehaviour {
                 gameObject.SetActive(false);
             }
         }
+		if (collision.gameObject.tag == "puck")
+			PuckReleaseSource.Play ();
     }
 
     private void OnGUI()
