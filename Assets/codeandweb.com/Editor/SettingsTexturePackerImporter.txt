@@ -1,9 +1,15 @@
 version: 2
 importPivots: 1
 tpsheetFileNames:
+- Assets/Art/Animations/TPSHEETheadani1.tpsheet
+- Assets/Art/Animations/TPSHEETtongue1ani.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
+- Assets/Art/Animations/TPSHEETheadani1.png
+- Assets/Art/Animations/TPSHEETtongue1ani.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
 enableDebugOutput: 0
