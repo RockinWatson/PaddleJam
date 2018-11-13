@@ -1092,6 +1092,16 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -15.955001
       objectReference: {fileID: 0}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashSoft
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashHard
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35443f0dcad46be4c8ac56ec7a4b88d0, type: 2}
   m_IsPrefabParent: 0
@@ -1140,7 +1150,7 @@ GameObject:
   - component: {fileID: 639097397}
   - component: {fileID: 639097396}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Background Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1324,6 +1334,7 @@ GameObject:
   - component: {fileID: 695204190}
   - component: {fileID: 695204191}
   - component: {fileID: 695204192}
+  - component: {fileID: 695204193}
   m_Layer: 0
   m_Name: puck
   m_TagString: puck
@@ -1436,6 +1447,87 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 695204191}
   BallForce: 200
+  PuckRelease: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
+--- !u!82 &695204193
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 695204187}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &698785257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2728,6 +2820,16 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -5.767
       objectReference: {fileID: 0}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashSoft
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashHard
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35443f0dcad46be4c8ac56ec7a4b88d0, type: 2}
   m_IsPrefabParent: 0
@@ -2902,6 +3004,16 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -21.086
       objectReference: {fileID: 0}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashSoft
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashHard
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35443f0dcad46be4c8ac56ec7a4b88d0, type: 2}
   m_IsPrefabParent: 0
@@ -3010,6 +3122,16 @@ Prefab:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashSoft
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashHard
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35443f0dcad46be4c8ac56ec7a4b88d0, type: 2}
   m_IsPrefabParent: 0
@@ -3159,6 +3281,16 @@ Prefab:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashSoft
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashHard
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35443f0dcad46be4c8ac56ec7a4b88d0, type: 2}
   m_IsPrefabParent: 0
@@ -3381,6 +3513,16 @@ Prefab:
       propertyPath: m_FlipX
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashSoft
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
+    - target: {fileID: 114812826262354282, guid: 35443f0dcad46be4c8ac56ec7a4b88d0,
+        type: 2}
+      propertyPath: crashHard
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c53ba02b36cd5a41af5d24f532ed82e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35443f0dcad46be4c8ac56ec7a4b88d0, type: 2}
   m_IsPrefabParent: 0
