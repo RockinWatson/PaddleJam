@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Title : MonoBehaviour {
 
-    private bool _space() { return Input.GetKeyDown(KeyCode.Space); }
+	private bool _return() { return Input.GetKeyDown(KeyCode.Return); }
     private string level = "JTest";
 
 	// Use this for initialization
@@ -13,7 +13,7 @@ public class Title : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (_space())
+        if (_return())
         {
             SceneManager.LoadScene(level);
         }	
